@@ -4,10 +4,10 @@ import { siteUrl } from '@/lib/content';
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: 'میثم علیان نژادی | Meysam Aliannezhadi',
-  description: 'وب‌سایت شخصی میثم علیان نژادی',
+  description: 'WordPress-Entwicklung, SEO und Digital Marketing',
   robots: {index: true, follow: true},
   icons: {icon:'/favicon.svg'},
 };
 export default function RootLayout({children}:{children:React.ReactNode}) {
-  return <html lang="fa" dir="rtl" suppressHydrationWarning><body>{children}</body></html>;
+  return <html lang="de" dir="ltr" suppressHydrationWarning><body>{children}</body></html>;
 }
