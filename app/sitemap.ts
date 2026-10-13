@@ -22,5 +22,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+    ...["cardtocard/", "en/cardtocard/", "fa/cardtocard/"].map(path => ({url:`${base}/${path}`,changeFrequency:"monthly" as const,priority:0.8})),
   ];
 }
